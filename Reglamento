@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documento PDF</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+iframe {
+  width: 100%;
+  height: calc(100vh - 55px);
+  border: none;
+  display: block;
+}
+.download {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.download a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="download">
+  <a href="documento.pdf" download>Descargar documento PDF ↓</a>
+</div>
+<iframe src="documento.pdf#toolbar=1&navpanes=0"></iframe>
+</body>
+</html>
